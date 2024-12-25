@@ -13,14 +13,14 @@ class Config(object):
 	API_HASH = os.environ.get("API_HASH" , "3139998ebc89c2bc1873b794689f8e56")
 	STREAMTAPE_API_PASS = os.environ.get("STREAMTAPE_API_PASS", "NoNeed")
 	STREAMTAPE_API_USERNAME = os.environ.get("STREAMTAPE_API_USERNAME", "NoNeed")
-	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+	LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL","-1002396213226"))
 	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
 	DOWN_PATH = os.environ.get("DOWN_PATH", "./downloads")
 	PRESET = os.environ.get("PRESET", "ultrafast")
 	OWNER_ID = int(os.environ.get("OWNER_ID", 1445283714))
 	CAPTION = "By @hacking_freak"
-	BOT_USERNAME = os.environ.get("BOT_USERNAME", "VideoWatermark_Bot")
-	DATABASE_URL = os.environ.get("DATABASE_URL")
+	BOT_USERNAME = os.environ.get("BOT_USERNAME", "WATERMARK_SW_BOT")
+	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://maan:3pxZzpu0oXBfki7l@cluster0.6i9il.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 	ALLOW_UPLOAD_TO_STREAMTAPE = bool(os.environ.get("ALLOW_UPLOAD_TO_STREAMTAPE", False))
 	USAGE_WATERMARK_ADDER = """
